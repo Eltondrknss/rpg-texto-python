@@ -49,7 +49,11 @@ Commits organizados
 ## 📁 Estrutura do projeto
 
 rpg-texto-python/
+
 ├── main.py
+
 ├── personagem.py
+
 ├── classes_herois.py
+
 └── README.md
