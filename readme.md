@@ -21,7 +21,7 @@ Tudo acontece no terminal, com mensagens temáticas pra cada classe.
 
 1. Clone o repositório:
 
-git clone https://github.com/seu-usuario/rpg-texto-python.git
+git clone https://github.com/Eltondrknss/rpg-texto-python.git
 
 2. Entre na pasta do projeto:
 
