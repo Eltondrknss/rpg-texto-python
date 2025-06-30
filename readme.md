@@ -36,20 +36,32 @@ python main.py
 ## 🧠 Conceitos aplicados
 
 Programação Orientada a Objetos
+
 Uso de classes e objetos
+
 Herança com subclasses
+
 Encapsulamento (atributos privados)
+
 Polimorfismo (cada classe tem seu próprio atacar())
+
 Boas práticas com Git
+
 Código versionado
+
 Commits organizados
+
 
 ---
 
 ## 📁 Estrutura do projeto
 
 rpg-texto-python/
+
 ├── main.py
+
 ├── personagem.py
+
 ├── classes_herois.py
+
 └── README.md
