@@ -1,6 +1,5 @@
 # Documentação Completa - RPG de Texto com Python (POO)
 
----
 
 ## Visão Geral
 
