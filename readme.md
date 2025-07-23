@@ -61,7 +61,7 @@ O projeto foi estruturado utilizando os 4 pilares da programação orientada a o
 
 ├── `main.py` - _Arquivo principal. Inicia o jogo e controla o loop da batalha_
 
-├── `personagem.py` - _Contem a classe Personagem que serve de base para todas as outras._
+├── `personagem.py` - _Contém a classe Personagem que serve de base para todas as outras._
 
 ├── `classes_herois.py` - _Centraliza todas as subclasses do jogo (mago, guerreiro, arqueiro)_
 
