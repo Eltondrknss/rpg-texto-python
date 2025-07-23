@@ -50,9 +50,10 @@ O projeto foi estruturado utilizando os 4 pilares da programação orientada a o
 ## 📁 Estrutura do projeto
 ```
 rpg-texto-python/
-
-├── main.py            #Arquivo principal. Inicia o jogo e controla o loop da batalha
-├── personagem.py      #Contém a classe Personagem que serve de base para todas as outras.
-├── classes_herois.py  #Centraliza todas as subclasses do jogo (mago, guerreiro, arqueiro)
-└── README.md          #Este documento
+├── main.py                # Arquivo principal, controla o fluxo do jogo
+├── personagem.py          # Classe base Personagem
+├── classes_herois.py      # Subclasses: Mago, Guerreiro, Arqueiro
+├── readme.md              # Instruções básicas e conceitos
+├── documentacao.md        # Esta documentação
+└── .gitignore             # Arquivos ignorados pelo Git
 ```
