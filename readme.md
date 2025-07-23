@@ -19,19 +19,11 @@ Tudo acontece no terminal, com mensagens temáticas pra cada classe.
 ---
 
 ## 🚀 Como executar o projeto
-
-1. Clone o repositório:
-
-`git clone https://github.com/Eltondrknss/rpg-texto-python.git`
-
-2. Entre na pasta do projeto:
-
-`cd rpg-texto-python`
-
-3. Execute o jogo:
-
-`python main.py`
-
+```sh
+git clone https://github.com/Eltondrknss/rpg-texto-python.git
+cd rpg-texto-python
+python main.py
+```
 ---
 
 ## 🧠 Conceitos aplicados
@@ -56,13 +48,11 @@ O projeto foi estruturado utilizando os 4 pilares da programação orientada a o
 ---
 
 ## 📁 Estrutura do projeto
+```
+rpg-texto-python/
 
-`rpg-texto-python/`
-
-├── `main.py` - _Arquivo principal. Inicia o jogo e controla o loop da batalha_
-
-├── `personagem.py` - _Contém a classe Personagem que serve de base para todas as outras._
-
-├── `classes_herois.py` - _Centraliza todas as subclasses do jogo (mago, guerreiro, arqueiro)_
-
-└── `README.md`
+├── main.py            #Arquivo principal. Inicia o jogo e controla o loop da batalha
+├── personagem.py      #Contém a classe Personagem que serve de base para todas as outras.
+├── classes_herois.py  #Centraliza todas as subclasses do jogo (mago, guerreiro, arqueiro)
+└── README.md          #Este documento
+```
