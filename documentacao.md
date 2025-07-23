@@ -42,6 +42,7 @@ rpg-texto-python/
 ├── personagem.py          # Classe base Personagem
 ├── classes_herois.py      # Subclasses: Mago, Guerreiro, Arqueiro
 ├── readme.md              # Instruções básicas e conceitos
+├── documentacao.md        # Esta documentação
 └── .gitignore             # Arquivos ignorados pelo Git
 ```
 
