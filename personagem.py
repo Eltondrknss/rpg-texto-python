@@ -33,7 +33,7 @@ class Personagem:
         if self._vida < 0:
             self._vida = 0
 
-        print (f"{self._nome} recebeu {dano_real} de dano. Sobrou: {self._vida}")
+        #print (f"{self._nome} recebeu {dano_real} de dano. Sobrou: {self._vida}")
 
     def curar(self, quantidade_cura):
         self._vida += quantidade_cura
