@@ -1,5 +1,6 @@
 from personagem import Personagem
 
+# mago = ataque dobrado
 class Mago(Personagem):
     def atacar(self, outro):
         dano = (self.ataque * 2) - outro.defesa
@@ -9,6 +10,7 @@ class Mago(Personagem):
         else:
             print(f"\n 🧙‍♂️ {self.nome} lançou uma bola de fogo mas errou feio...")
 
+# guerreiro = ignora metade da defesa do oponente
 class Guerreiro(Personagem):
     def atacar(self, outro):
         dano = self.ataque - (outro.defesa // 2)
@@ -18,6 +20,7 @@ class Guerreiro(Personagem):
         else:
             print(f"\n ⚔️ {self.nome} tentou atacar mas foi bloqueado pelo {outro.nome}.")
 
+# arqueiro = 10% de chance de acerto crítico (dano x2)
 class Arqueiro(Personagem):
     def atacar(self, outro):
         from random import randint
