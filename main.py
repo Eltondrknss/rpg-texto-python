@@ -13,7 +13,7 @@ classe_escolhida = input("\n Digite o número da classe escolhida: ")
 if classe_escolhida == "1":
     jogador = Mago(jogador_nome, 100, 40, 20)
 elif classe_escolhida == "2":
-    jogador = Guerreiro(jogador_nome, 120, 30, 30)
+    jogador = Guerreiro(jogador_nome, 120, 32, 30)
 elif classe_escolhida == "3":
     jogador = Arqueiro(jogador_nome, 90, 35, 25)
 else:
