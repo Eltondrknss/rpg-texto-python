@@ -1,3 +1,4 @@
+
 # RPG de Texto com Python
 
 Projeto simples feito em Python, onde o jogador escolhe uma classe (Mago, Guerreiro ou Arqueiro) e enfrenta batalhas automáticas em estilo RPG de texto.
@@ -30,15 +31,19 @@ python main.py
 
 **Programação Orientada a Objetos**
 
-O projeto foi estruturado utilizando os 4 pilares da programação orientada a objetos pra criar um código mais seguro e organizado.
+O projeto foi estruturado utilizando os 4 pilares da programação orientada a objetos para criar um código mais seguro e organizado.
 
-- **Classes e objetos**: Foram utilizadas classes (`Personagem`, `Arqueiro`, `Guerreiro`, `Mago` e `Inimigo`) para modelar as entidades no jogo. No arquivo `main.py` são criadas as instâncias dessas classes para representar os personagens da batalha.
+- **Classes e objetos**: Foram criadas as classes `Personagem` (classe base), `Arqueiro`, `Guerreiro`, `Mago` e `Inimigo` para modelar as entidades do jogo. No arquivo `main.py` são instanciados objetos dessas classes para representar o jogador e o inimigo na batalha.
 
-- **Encapsulamento**: Pra garantir a integridade dos dados, os atributos das classes foram protegidos (`_nome`, `_vida`, `_ataque`, `_defesa`), e a manipulação desses dados é controlada por métodos como `receber_dano()` e `curar()`, que contem as regras do jogo (ex: a vida não pode ficar negativa). O acesso a esses dados é feito de forma segura através de `@property`.
+- **Encapsulamento**: Os atributos das classes são protegidos com underscore (`_nome`, `_vida`, `_ataque`, `_defesa`) e só podem ser acessados através de propriedades (`@property`) e métodos específicos como `receber_dano()` e `curar()`. Isso garante que as regras do jogo sejam respeitadas (ex: vida não pode ser negativa).
 
-- **Herança**: As classes (Mago, Guerreiro, etc) herdam da classe base Personagem. Isso permite o reuso do código, já que todos os personagens compartilham atributos e métodos em comum, como a lógica de dano, por exemplo.
+- **Herança**: As classes `Mago`, `Guerreiro` e `Arqueiro` herdam da classe base `Personagem`, reutilizando atributos comuns (`_nome`, `_vida`, `_ataque`, `_defesa`) e métodos como `receber_dano()` e `esta_vivo()`, evitando repetição de código.
 
-- **Polimorfismo**: O método `atacar()` é definido na classe Personagem e em seguida é sobrescrito em cada subclasse. Isso permite que o mesmo comando `jogador.atacar(inimigo)` execute uma ação completamente diferente,  com lógicas e mensagens personalizadas, tornando o código principal da batalha mais limpo e flexível.
+- **Polimorfismo**: O método `atacar()` é implementado de forma diferente em cada classe filha. Quando chamamos `jogador.atacar(inimigo)`, o comportamento varia conforme a classe: o Mago pode usar magia, o Guerreiro golpes físicos, e o Arqueiro ataques à distância, mas todos respondem ao mesmo método.
+
+**Outras práticas aplicadas:**
+- Controle de versão com Git
+- Separação de responsabilidades em arquivos diferentes
 
 **Código versionado**
 

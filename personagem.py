@@ -1,5 +1,6 @@
 #classe base para todas as outras
 class Personagem:
+    #*** comentario Grazyele: Falta documentação, type hints(inteiro, float, string etc.) e validação de tipos. Isso ajuda a IDE a entender melhor o código e evitar erros. ***
     def __init__ (self, nome, vida, ataque, defesa):
         self._nome = nome
         self._vida = vida
@@ -26,7 +27,7 @@ class Personagem:
     
     # lógica de receber dano
     def receber_dano(self, quantidade_dano): 
-        dano_real = quantidade_dano - self._defesa
+        dano_real = quantidade_dano - self._defesa # *** Comentario Grazyele: isso é um bug, pois está subtraindo a defesa novamente! Ele já vem calculado das subclasses ***
         if dano_real < 0:
             dano_real = 0
 
@@ -34,6 +35,8 @@ class Personagem:
         self._vida -= dano_real
         if self._vida < 0:
             self._vida = 0
+
+    #***Comentario Grazyele: codigos comentados deve ser removidos se não for mais utilizado, se tiver inseguro versiona ele, criando uma branch nova, mas na branch principal deve ser evitado.   *******
 
     # lógica de curar o personagem (não implementada)
     # def curar(self, quantidade_cura):
@@ -56,7 +59,7 @@ class Personagem:
         print(f"\n{self._nome} - Vida: {self._vida}, Ataque: {self._ataque}, Defesa: {self._defesa}")
 
     # retorna personagem morto se a vida estiver zerada
-    def morreu(self):
-        return self._vida <= 0
+    def morreu(self): # ***Comentario Grazyele: Redundância, Não é necessário, pois já tem a função esta_vivo() que retorna o inverso dela.***
+        return self._vida <= 0 
     
     
