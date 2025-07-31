@@ -1,15 +1,21 @@
-from classes_herois import *
+from classes_herois import Mago, Guerreiro, Arqueiro
+
+jogador_nome = ''
+classe_escolhida = ''
+classes_permitidas = ['1', '2', '3']
 
 # Chama o inicio do jogo e a seleção de classe do personagem
 print("\nBEM VINDO AO SIMULADOR DE BATALHAS RPG DE TEXTO DO ELTON\n")
-jogador_nome = input("Digite o nome do seu jogador: ")
 
-print(f"\n Escolha sua classe :"
-      "\n 1 - 🧙‍♂️  Mago"
-      "\n 2 - ⚔️  Guerreiro"
-      "\n 3 - 🏹  Arqueiro")
-
-classe_escolhida = input("\n Digite o número da classe escolhida: ")
+while jogador_nome == '':
+    jogador_nome = input("Digite o nome do seu jogador: ")
+    
+while classe_escolhida not in classes_permitidas:
+    print(f"\n Escolha sua classe :"
+        "\n 1 - 🧙‍♂️  Mago"
+        "\n 2 - ⚔️  Guerreiro"
+        "\n 3 - 🏹  Arqueiro")
+    classe_escolhida = input("\n Digite o número da classe escolhida: ")
 
 # instancia um jogador de acordo com a opção escolhida
 if classe_escolhida == "1":
